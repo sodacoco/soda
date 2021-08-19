@@ -4,6 +4,7 @@ import (
 	"os"
 	"soda/conf"
 	"soda/server"
+	"soda/util"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	r := server.NewRouter()
 	err := r.Run()
 	if err != nil {
+		util.Log().Panic("", err)
 		os.Exit(0)
 	}
 }
