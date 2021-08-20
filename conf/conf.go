@@ -15,5 +15,9 @@ func Init() {
 		os.Exit(0)
 	}
 
+	// 设置日志级别
 	util.BuildLogger(os.Getenv("LOG_LEVEL"))
+
+	// 连接数据库
+
 }
