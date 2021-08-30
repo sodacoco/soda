@@ -18,5 +18,5 @@ services:
       --lower_case_table_names=1
       --max_allowed_packet=128M;
     volumes:
-      - ./runtime/data/mysql:/var/lib/mysql
+      - ../runtime/data/mysql:/var/lib/mysql
     network_mode: bridge
